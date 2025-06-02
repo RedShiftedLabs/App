@@ -34,13 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 99,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 92,
+				"line" : 110,
 				"parent" : 0
 			},
 			{
@@ -52,7 +46,13 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 112,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 123,
 				"parent" : 0
 			},
 			{
@@ -64,7 +64,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 82,
+				"line" : 93,
 				"parent" : 0
 			}
 		]
@@ -75,7 +75,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0"
+					"fragment" : "-stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0"
 				}
 			],
 			"defines" : 
@@ -127,7 +127,7 @@
 				[
 					1
 				],
-				"standard" : "17"
+				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[

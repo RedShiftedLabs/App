@@ -26,6 +26,9 @@ private:
   std::unique_ptr<LuaEngine> m_luaEngine;
   bool m_isRunning;
 
+  static void KeyCallback(GLFWwindow *window, int key, int scancode, int action,
+                          int mods);
+
   // Window settings
   static constexpr int WINDOW_WIDTH = 800;
   static constexpr int WINDOW_HEIGHT = 600;

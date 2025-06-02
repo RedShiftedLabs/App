@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(App)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 if(APPLE)
@@ -43,7 +43,7 @@ else()
     if(NOT Lua_FOUND)
         find_package(Lua REQUIRED)
     endif()
-    
+
     if(Lua_FOUND)
         message(STATUS "Found Lua via find_package: Version=${LUA_VERSION_STRING} Headers=${LUA_INCLUDE_DIR} Libs=${LUA_LIBRARIES}")
         set(LUA_INCLUDE_DIRS ${LUA_INCLUDE_DIR})
@@ -73,11 +73,22 @@ add_executable(App
     ${IMGUI_SOURCES}
 )
 
-add_custom_command(TARGET App POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    ${CMAKE_SOURCE_DIR}/gui.lua
-    $<TARGET_FILE_DIR:App>/gui.lua
-)
+# Create symbolic link instead of copying (better for hot reload)
+if(WIN32)
+    # Windows: Use copy for compatibility
+    add_custom_command(TARGET App POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_SOURCE_DIR}/gui.lua
+        $<TARGET_FILE_DIR:App>/gui.lua
+    )
+else()
+    # Unix/Linux/macOS: Use symbolic link
+    add_custom_command(TARGET App POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E create_symlink
+        ${CMAKE_SOURCE_DIR}/gui.lua
+        $<TARGET_FILE_DIR:App>/gui.lua
+    )
+endif()
 
 target_include_directories(App PRIVATE
     src

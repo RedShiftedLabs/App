@@ -53,6 +53,10 @@ void Application::InitializeGLFW() {
 
   glfwMakeContextCurrent(m_window);
   glfwSwapInterval(1); // VSync
+
+  // Set up keyboard callback for live reload
+  glfwSetWindowUserPointer(m_window, this);
+  glfwSetKeyCallback(m_window, KeyCallback);
 }
 
 void Application::InitializeImGui() {
@@ -119,4 +123,27 @@ void Application::Shutdown() {
 
 void Application::ErrorCallback(int error, const char *description) {
   std::cerr << "GLFW Error (" << error << "): " << description << "\n";
+}
+
+void Application::KeyCallback(GLFWwindow *window, int key, int scancode,
+                              int action, int mods) {
+  auto *app = static_cast<Application *>(glfwGetWindowUserPointer(window));
+
+  if (action == GLFW_PRESS || action == GLFW_REPEAT) {
+    // F5 for force reload
+    if (key == GLFW_KEY_F5) {
+      app->m_luaEngine->ForceReload();
+    }
+    // Ctrl+R for force reload
+    else if (key == GLFW_KEY_R && (mods & GLFW_MOD_CONTROL)) {
+      app->m_luaEngine->ForceReload();
+    }
+    // F6 to toggle auto-reload
+    else if (key == GLFW_KEY_F6) {
+      bool currentState = app->m_luaEngine->IsAutoReloadEnabled();
+      app->m_luaEngine->SetAutoReload(!currentState);
+      std::cout << "Auto-reload " << (!currentState ? "enabled" : "disabled")
+                << "\n";
+    }
+  }
 }
