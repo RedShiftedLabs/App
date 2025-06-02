@@ -54,7 +54,7 @@ build CMakeFiles/App.dir/src/main.cpp.o: CXX_COMPILER__App_unscanned_Debug /User
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/main.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -65,7 +65,7 @@ build CMakeFiles/App.dir/src/Application.cpp.o: CXX_COMPILER__App_unscanned_Debu
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/Application.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -76,7 +76,7 @@ build CMakeFiles/App.dir/src/LuaEngine.cpp.o: CXX_COMPILER__App_unscanned_Debug 
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/LuaEngine.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -87,7 +87,29 @@ build CMakeFiles/App.dir/src/ImGuiBindings.cpp.o: CXX_COMPILER__App_unscanned_De
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/ImGuiBindings.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/App.dir
+  OBJECT_FILE_DIR = CMakeFiles/App.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
+
+build CMakeFiles/App.dir/src/Shader.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/src/Shader.cpp || cmake_object_order_depends_target_App
+  CONFIG = Debug
+  DEFINES = -DGL_SILENCE_DEPRECATION
+  DEP_FILE = CMakeFiles/App.dir/src/Shader.cpp.o.d
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/App.dir
+  OBJECT_FILE_DIR = CMakeFiles/App.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
+
+build CMakeFiles/App.dir/src/SquareRenderer.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/src/SquareRenderer.cpp || cmake_object_order_depends_target_App
+  CONFIG = Debug
+  DEFINES = -DGL_SILENCE_DEPRECATION
+  DEP_FILE = CMakeFiles/App.dir/src/SquareRenderer.cpp.o.d
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -98,7 +120,7 @@ build CMakeFiles/App.dir/deps/imgui/imgui.cpp.o: CXX_COMPILER__App_unscanned_Deb
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -109,7 +131,7 @@ build CMakeFiles/App.dir/deps/imgui/imgui_draw.cpp.o: CXX_COMPILER__App_unscanne
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui_draw.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -120,7 +142,7 @@ build CMakeFiles/App.dir/deps/imgui/imgui_tables.cpp.o: CXX_COMPILER__App_unscan
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui_tables.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -131,7 +153,7 @@ build CMakeFiles/App.dir/deps/imgui/imgui_widgets.cpp.o: CXX_COMPILER__App_unsca
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui_widgets.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -142,7 +164,7 @@ build CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_glfw.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui/backends
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
@@ -153,9 +175,20 @@ build CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPI
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
-  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui/backends
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
+
+build CMakeFiles/App.dir/deps/glad/src/glad.c.o: C_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/glad/src/glad.c || cmake_object_order_depends_target_App
+  CONFIG = Debug
+  DEFINES = -DGL_SILENCE_DEPRECATION
+  DEP_FILE = CMakeFiles/App.dir/deps/glad/src/glad.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/Users/redshifted/codes/App/deps/glad/include -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/App.dir
+  OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/glad/src
   TARGET_COMPILE_PDB = CMakeFiles/App.dir/
   TARGET_PDB = App.pdb
 
@@ -167,7 +200,7 @@ build CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPI
 #############################################
 # Link the executable App
 
-build App: CXX_EXECUTABLE_LINKER__App_Debug CMakeFiles/App.dir/src/main.cpp.o CMakeFiles/App.dir/src/Application.cpp.o CMakeFiles/App.dir/src/LuaEngine.cpp.o CMakeFiles/App.dir/src/ImGuiBindings.cpp.o CMakeFiles/App.dir/deps/imgui/imgui.cpp.o CMakeFiles/App.dir/deps/imgui/imgui_draw.cpp.o CMakeFiles/App.dir/deps/imgui/imgui_tables.cpp.o CMakeFiles/App.dir/deps/imgui/imgui_widgets.cpp.o CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o | deps/glfw/src/libglfw3.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/OpenGL.framework || deps/glfw/src/libglfw3.a
+build App: CXX_EXECUTABLE_LINKER__App_Debug CMakeFiles/App.dir/src/main.cpp.o CMakeFiles/App.dir/src/Application.cpp.o CMakeFiles/App.dir/src/LuaEngine.cpp.o CMakeFiles/App.dir/src/ImGuiBindings.cpp.o CMakeFiles/App.dir/src/Shader.cpp.o CMakeFiles/App.dir/src/SquareRenderer.cpp.o CMakeFiles/App.dir/deps/imgui/imgui.cpp.o CMakeFiles/App.dir/deps/imgui/imgui_draw.cpp.o CMakeFiles/App.dir/deps/imgui/imgui_tables.cpp.o CMakeFiles/App.dir/deps/imgui/imgui_widgets.cpp.o CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/App.dir/deps/glad/src/glad.c.o | deps/glfw/src/libglfw3.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/OpenGL.framework || deps/glfw/src/libglfw3.a
   CONFIG = Debug
   FLAGS = -stdlib=libc++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   LINK_FLAGS = -L/opt/homebrew/opt/llvm/lib

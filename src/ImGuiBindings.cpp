@@ -66,11 +66,109 @@ void ImGuiBindings::Register(lua_State *l) {
       {"GetWindowPos", GetWindowPos},
       {"SetWindowPos", SetWindowPos},
 
+      // Style functions
+      {"PushStyleColor", PushStyleColor},
+      {"PopStyleColor", PopStyleColor},
+      {"PushStyleVar", PushStyleVar},
+      {"PopStyleVar", PopStyleVar},
+
+      // Additional utility functions
+      {"SetNextWindowSize", SetNextWindowSize},
+      {"SetNextWindowPos", SetNextWindowPos},
+      {"CalcTextSize", CalcTextSize},
+      {"GetWindowWidth", GetWindowWidth},
+      {"SetCursorPosX", SetCursorPosX},
+      {"IsItemHovered", IsItemHovered},
+      {"SetTooltip", SetTooltip},
+
       {nullptr, nullptr}};
 
   // NOLINTBEGIN(readability-math-missing-parentheses)
   luaL_newlib(l, functions);
   // NOLINTEND(readability-math-missing-parentheses)
+
+  // Style Color constants
+  lua_pushinteger(l, ImGuiCol_WindowBg);
+  lua_setfield(l, -2, "Col_WindowBg");
+
+  lua_pushinteger(l, ImGuiCol_TitleBg);
+  lua_setfield(l, -2, "Col_TitleBg");
+
+  lua_pushinteger(l, ImGuiCol_TitleBgActive);
+  lua_setfield(l, -2, "Col_TitleBgActive");
+
+  lua_pushinteger(l, ImGuiCol_Button);
+  lua_setfield(l, -2, "Col_Button");
+
+  lua_pushinteger(l, ImGuiCol_ButtonHovered);
+  lua_setfield(l, -2, "Col_ButtonHovered");
+
+  lua_pushinteger(l, ImGuiCol_ButtonActive);
+  lua_setfield(l, -2, "Col_ButtonActive");
+
+  lua_pushinteger(l, ImGuiCol_SliderGrab);
+  lua_setfield(l, -2, "Col_SliderGrab");
+
+  lua_pushinteger(l, ImGuiCol_SliderGrabActive);
+  lua_setfield(l, -2, "Col_SliderGrabActive");
+
+  lua_pushinteger(l, ImGuiCol_FrameBg);
+  lua_setfield(l, -2, "Col_FrameBg");
+
+  lua_pushinteger(l, ImGuiCol_FrameBgHovered);
+  lua_setfield(l, -2, "Col_FrameBgHovered");
+
+  lua_pushinteger(l, ImGuiCol_FrameBgActive);
+  lua_setfield(l, -2, "Col_FrameBgActive");
+
+  lua_pushinteger(l, ImGuiCol_Header);
+  lua_setfield(l, -2, "Col_Header");
+
+  lua_pushinteger(l, ImGuiCol_HeaderHovered);
+  lua_setfield(l, -2, "Col_HeaderHovered");
+
+  lua_pushinteger(l, ImGuiCol_HeaderActive);
+  lua_setfield(l, -2, "Col_HeaderActive");
+
+  lua_pushinteger(l, ImGuiCol_Text);
+  lua_setfield(l, -2, "Col_Text");
+
+  // Style Var constants
+  lua_pushinteger(l, ImGuiStyleVar_WindowRounding);
+  lua_setfield(l, -2, "StyleVar_WindowRounding");
+
+  lua_pushinteger(l, ImGuiStyleVar_FrameRounding);
+  lua_setfield(l, -2, "StyleVar_FrameRounding");
+
+  lua_pushinteger(l, ImGuiStyleVar_GrabRounding);
+  lua_setfield(l, -2, "StyleVar_GrabRounding");
+
+  lua_pushinteger(l, ImGuiStyleVar_ItemSpacing);
+  lua_setfield(l, -2, "StyleVar_ItemSpacing");
+
+  lua_pushinteger(l, ImGuiStyleVar_WindowPadding);
+  lua_setfield(l, -2, "StyleVar_WindowPadding");
+
+  lua_pushinteger(l, ImGuiStyleVar_FramePadding);
+  lua_setfield(l, -2, "StyleVar_FramePadding");
+
+  // Window flags
+  lua_pushinteger(l, ImGuiWindowFlags_NoCollapse);
+  lua_setfield(l, -2, "WindowFlags_NoCollapse");
+
+  // Condition flags
+  lua_pushinteger(l, ImGuiCond_FirstUseEver);
+  lua_setfield(l, -2, "Cond_FirstUseEver");
+
+  // Tree flags
+  lua_pushinteger(l, ImGuiTreeNodeFlags_DefaultOpen);
+  lua_setfield(l, -2, "TreeNodeFlags_DefaultOpen");
+
+  // Color edit flags
+  lua_pushinteger(l, ImGuiColorEditFlags_NoLabel);
+  lua_setfield(l, -2, "ColorEditFlags_NoLabel");
+
+  // Set the ImGui table as a global
   lua_setglobal(l, "ImGui");
 }
 
@@ -503,4 +601,119 @@ bool ImGuiBindings::GetColorFromTable(lua_State *L, int index, float &r,
   lua_pop(L, 1);
 
   return true;
+}
+
+int ImGuiBindings::PushStyleColor(lua_State *L) {
+  ImGuiCol idx = static_cast<ImGuiCol>(luaL_checkinteger(L, 1));
+
+  if (lua_gettop(L) == 5) {
+    // RGBA values
+    float r = luaL_checknumber(L, 2);
+    float g = luaL_checknumber(L, 3);
+    float b = luaL_checknumber(L, 4);
+    float a = luaL_checknumber(L, 5);
+    ImGui::PushStyleColor(idx, ImVec4(r, g, b, a));
+  } else if (lua_gettop(L) == 2) {
+    // ImU32 color value
+    ImU32 col = static_cast<ImU32>(luaL_checkinteger(L, 2));
+    ImGui::PushStyleColor(idx, col);
+  } else {
+    return luaL_error(
+        L,
+        "PushStyleColor expects either (idx, r, g, b, a) or (idx, color_u32)");
+  }
+
+  return 0;
+}
+
+int ImGuiBindings::PopStyleColor(lua_State *L) {
+  int count = 1;
+  if (lua_gettop(L) > 0) {
+    count = luaL_checkinteger(L, 1);
+  }
+  ImGui::PopStyleColor(count);
+  return 0;
+}
+
+int ImGuiBindings::PushStyleVar(lua_State *L) {
+  ImGuiStyleVar idx = static_cast<ImGuiStyleVar>(luaL_checkinteger(L, 1));
+
+  if (lua_gettop(L) == 3) {
+    // Vec2 value
+    float x = luaL_checknumber(L, 2);
+    float y = luaL_checknumber(L, 3);
+    ImGui::PushStyleVar(idx, ImVec2(x, y));
+  } else if (lua_gettop(L) == 2) {
+    // Float value
+    float val = luaL_checknumber(L, 2);
+    ImGui::PushStyleVar(idx, val);
+  } else {
+    return luaL_error(
+        L, "PushStyleVar expects either (idx, value) or (idx, x, y)");
+  }
+
+  return 0;
+}
+
+int ImGuiBindings::PopStyleVar(lua_State *L) {
+  int count = 1;
+  if (lua_gettop(L) > 0) {
+    count = luaL_checkinteger(L, 1);
+  }
+  ImGui::PopStyleVar(count);
+  return 0;
+}
+
+int ImGuiBindings::SetNextWindowSize(lua_State *L) {
+  float width = luaL_checknumber(L, 1);
+  float height = luaL_checknumber(L, 2);
+  ImGuiCond cond = 0;
+  if (lua_gettop(L) > 2) {
+    cond = static_cast<ImGuiCond>(luaL_checkinteger(L, 3));
+  }
+  ImGui::SetNextWindowSize(ImVec2(width, height), cond);
+  return 0;
+}
+
+int ImGuiBindings::SetNextWindowPos(lua_State *L) {
+  float x = luaL_checknumber(L, 1);
+  float y = luaL_checknumber(L, 2);
+  ImGuiCond cond = 0;
+  if (lua_gettop(L) > 2) {
+    cond = static_cast<ImGuiCond>(luaL_checkinteger(L, 3));
+  }
+  ImGui::SetNextWindowPos(ImVec2(x, y), cond);
+  return 0;
+}
+
+int ImGuiBindings::CalcTextSize(lua_State *L) {
+  const char *text = luaL_checkstring(L, 1);
+  ImVec2 size = ImGui::CalcTextSize(text);
+  lua_pushnumber(L, size.x);
+  lua_pushnumber(L, size.y);
+  return 2;
+}
+
+int ImGuiBindings::GetWindowWidth(lua_State *L) {
+  float width = ImGui::GetWindowWidth();
+  lua_pushnumber(L, width);
+  return 1;
+}
+
+int ImGuiBindings::SetCursorPosX(lua_State *L) {
+  float x = luaL_checknumber(L, 1);
+  ImGui::SetCursorPosX(x);
+  return 0;
+}
+
+int ImGuiBindings::IsItemHovered(lua_State *L) {
+  bool hovered = ImGui::IsItemHovered();
+  lua_pushboolean(L, static_cast<int>(hovered));
+  return 1;
+}
+
+int ImGuiBindings::SetTooltip(lua_State *L) {
+  const char *text = luaL_checkstring(L, 1);
+  ImGui::SetTooltip("%s", text);
+  return 0;
 }

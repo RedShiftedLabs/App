@@ -72,4 +72,23 @@ private:
                         float a = 1.0f);
   static bool GetColorFromTable(lua_State *L, int index, float &r, float &g,
                                 float &b, float &a);
+
+  // Style functions
+  static int PushStyleColor(lua_State *L);
+  static int PopStyleColor(lua_State *L);
+  static int PushStyleVar(lua_State *L);
+  static int PopStyleVar(lua_State *L);
+
+  // Constants/enums functions
+  static int GetStyleColorEnum(lua_State *L);
+  static int GetStyleVarEnum(lua_State *L);
+
+  // Additional utility functions your Lua script needs:
+  static int SetNextWindowSize(lua_State *L);
+  static int SetNextWindowPos(lua_State *L);
+  static int CalcTextSize(lua_State *L);
+  static int GetWindowWidth(lua_State *L);
+  static int SetCursorPosX(lua_State *L);
+  static int IsItemHovered(lua_State *L);
+  static int SetTooltip(lua_State *L);
 };

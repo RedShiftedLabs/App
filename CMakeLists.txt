@@ -61,16 +61,23 @@ set(IMGUI_SOURCES
     deps/imgui/backends/imgui_impl_opengl3.cpp
 )
 
+set(GLAD_SOURCES
+    deps/glad/src/glad.c
+)
+
 set(APP_SOURCES
     src/main.cpp
     src/Application.cpp
     src/LuaEngine.cpp
     src/ImGuiBindings.cpp
+    src/Shader.cpp
+    src/SquareRenderer.cpp
 )
 
 add_executable(App
     ${APP_SOURCES}
     ${IMGUI_SOURCES}
+    ${GLAD_SOURCES}
 )
 
 # Create symbolic link instead of copying (better for hot reload)
@@ -96,6 +103,7 @@ target_include_directories(App PRIVATE
     deps/glm
     deps/imgui
     deps/imgui/backends
+    deps/glad/include
     ${LUA_INCLUDE_DIRS}
 )
 

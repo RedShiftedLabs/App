@@ -1,0 +1,7 @@
+{
+    "Lua.diagnostics.globals": [
+        "App",
+        "draw_gui",
+        "ImGui"
+    ]
+}
