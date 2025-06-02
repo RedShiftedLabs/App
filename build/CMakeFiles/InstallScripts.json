@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/redshifted/codes/App/build/cmake_install.cmake",
+		"/Users/redshifted/codes/App/build/deps/glfw/cmake_install.cmake",
+		"/Users/redshifted/codes/App/build/deps/glfw/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
