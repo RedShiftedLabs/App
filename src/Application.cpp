@@ -32,7 +32,7 @@ bool Application::Initialize() {
 void Application::InitializeGLFW() {
   glfwSetErrorCallback(ErrorCallback);
 
-  if (!glfwInit()) {
+  if (glfwInit() == 0) {
     throw std::runtime_error("Failed to initialize GLFW");
   }
 
@@ -46,7 +46,7 @@ void Application::InitializeGLFW() {
 
   m_window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT,
                               "Minimal ImGui + Lua App", nullptr, nullptr);
-  if (!m_window) {
+  if (m_window == nullptr) {
     glfwTerminate();
     throw std::runtime_error("Failed to create GLFW window");
   }
@@ -72,7 +72,7 @@ void Application::InitializeImGui() {
 }
 
 void Application::Run() {
-  while (m_isRunning && !glfwWindowShouldClose(m_window)) {
+  while (m_isRunning && (glfwWindowShouldClose(m_window) == 0)) {
     glfwPollEvents();
     Update();
     Render();
@@ -135,7 +135,7 @@ void Application::KeyCallback(GLFWwindow *window, int key, int scancode,
       app->m_luaEngine->ForceReload();
     }
     // Ctrl+R for force reload
-    else if (key == GLFW_KEY_R && (mods & GLFW_MOD_CONTROL)) {
+    else if (key == GLFW_KEY_R && ((mods & GLFW_MOD_CONTROL) != 0)) {
       app->m_luaEngine->ForceReload();
     }
     // F6 to toggle auto-reload

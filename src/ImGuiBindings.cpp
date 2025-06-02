@@ -4,67 +4,74 @@
 #include <imgui.h>
 #include <lauxlib.h>
 
-void ImGuiBindings::Register(lua_State *L) {
-  static const luaL_Reg functions[] = {// Window functions
-                                       {"Begin", Begin},
-                                       {"End", End},
+static float g_bgColor[4] = {0.2f, 0.2f, 0.2f, 1.0f};
 
-                                       // Text functions
-                                       {"Text", Text},
-                                       {"TextColored", TextColored},
-                                       {"BulletText", BulletText},
+using LuaFunction = luaL_Reg;
 
-                                       // Button/Input functions
-                                       {"Button", Button},
-                                       {"SmallButton", SmallButton},
-                                       {"Checkbox", Checkbox},
-                                       {"RadioButton", RadioButton},
+void ImGuiBindings::Register(lua_State *l) {
+  static const LuaFunction functions[] = {
+      // Window functions
+      {"Begin", Begin},
+      {"End", End},
 
-                                       // Slider/Input functions
-                                       {"SliderFloat", SliderFloat},
-                                       {"SliderInt", SliderInt},
-                                       {"InputText", InputText},
-                                       {"InputFloat", InputFloat},
-                                       {"InputInt", InputInt},
+      // Text functions
+      {"Text", Text},
+      {"TextColored", TextColored},
+      {"BulletText", BulletText},
 
-                                       // Layout functions
-                                       {"Separator", Separator},
-                                       {"SameLine", SameLine},
-                                       {"Spacing", Spacing},
-                                       {"Indent", Indent},
-                                       {"Unindent", Unindent},
+      // Button/Input functions
+      {"Button", Button},
+      {"SmallButton", SmallButton},
+      {"Checkbox", Checkbox},
+      {"RadioButton", RadioButton},
 
-                                       // Tree/Collapsing functions
-                                       {"TreeNode", TreeNode},
-                                       {"TreePop", TreePop},
-                                       {"CollapsingHeader", CollapsingHeader},
+      // Slider/Input functions
+      {"SliderFloat", SliderFloat},
+      {"SliderInt", SliderInt},
+      {"InputText", InputText},
+      {"InputFloat", InputFloat},
+      {"InputInt", InputInt},
 
-                                       // Color functions
-                                       {"ColorEdit3", ColorEdit3},
-                                       {"ColorEdit4", ColorEdit4},
+      // Layout functions
+      {"Separator", Separator},
+      {"SameLine", SameLine},
+      {"Spacing", Spacing},
+      {"Indent", Indent},
+      {"Unindent", Unindent},
 
-                                       // Combo/List functions
-                                       {"BeginCombo", BeginCombo},
-                                       {"EndCombo", EndCombo},
-                                       {"Selectable", Selectable},
+      // Tree/Collapsing functions
+      {"TreeNode", TreeNode},
+      {"TreePop", TreePop},
+      {"CollapsingHeader", CollapsingHeader},
 
-                                       // Menu functions
-                                       {"BeginMenuBar", BeginMenuBar},
-                                       {"EndMenuBar", EndMenuBar},
-                                       {"BeginMenu", BeginMenu},
-                                       {"EndMenu", EndMenu},
-                                       {"MenuItem", MenuItem},
+      // Color functions
+      {"ColorEdit3", ColorEdit3},
+      {"ColorEdit4", ColorEdit4},
 
-                                       // Utility functions
-                                       {"GetWindowSize", GetWindowSize},
-                                       {"SetWindowSize", SetWindowSize},
-                                       {"GetWindowPos", GetWindowPos},
-                                       {"SetWindowPos", SetWindowPos},
+      // Combo/List functions
+      {"BeginCombo", BeginCombo},
+      {"EndCombo", EndCombo},
+      {"Selectable", Selectable},
 
-                                       {nullptr, nullptr}};
+      // Menu functions
+      {"BeginMenuBar", BeginMenuBar},
+      {"EndMenuBar", EndMenuBar},
+      {"BeginMenu", BeginMenu},
+      {"EndMenu", EndMenu},
+      {"MenuItem", MenuItem},
 
-  luaL_newlib(L, functions);
-  lua_setglobal(L, "ImGui");
+      // Utility functions
+      {"GetWindowSize", GetWindowSize},
+      {"SetWindowSize", SetWindowSize},
+      {"GetWindowPos", GetWindowPos},
+      {"SetWindowPos", SetWindowPos},
+
+      {nullptr, nullptr}};
+
+  // NOLINTBEGIN(readability-math-missing-parentheses)
+  luaL_newlib(l, functions);
+  // NOLINTEND(readability-math-missing-parentheses)
+  lua_setglobal(l, "ImGui");
 }
 
 // Window functions
@@ -130,33 +137,33 @@ int ImGuiBindings::Button(lua_State *L) {
   }
 
   bool pressed = ImGui::Button(text, size);
-  lua_pushboolean(L, pressed);
+  lua_pushboolean(L, static_cast<int>(pressed));
   return 1;
 }
 
 int ImGuiBindings::SmallButton(lua_State *L) {
   const char *text = luaL_checkstring(L, 1);
   bool pressed = ImGui::SmallButton(text);
-  lua_pushboolean(L, pressed);
+  lua_pushboolean(L, static_cast<int>(pressed));
   return 1;
 }
 
 int ImGuiBindings::Checkbox(lua_State *L) {
   const char *label = luaL_checkstring(L, 1);
-  bool value = lua_toboolean(L, 2);
+  bool value = lua_toboolean(L, 2) != 0;
 
   bool changed = ImGui::Checkbox(label, &value);
-  lua_pushboolean(L, changed);
-  lua_pushboolean(L, value);
+  lua_pushboolean(L, static_cast<int>(changed));
+  lua_pushboolean(L, static_cast<int>(value));
   return 2;
 }
 
 int ImGuiBindings::RadioButton(lua_State *L) {
   const char *label = luaL_checkstring(L, 1);
-  bool active = lua_toboolean(L, 2);
+  bool active = lua_toboolean(L, 2) != 0;
 
   bool pressed = ImGui::RadioButton(label, active);
-  lua_pushboolean(L, pressed);
+  lua_pushboolean(L, static_cast<int>(pressed));
   return 1;
 }
 
@@ -168,7 +175,7 @@ int ImGuiBindings::SliderFloat(lua_State *L) {
   float max_val = luaL_checknumber(L, 4);
 
   bool changed = ImGui::SliderFloat(label, &value, min_val, max_val);
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_pushnumber(L, value);
   return 2;
 }
@@ -180,7 +187,7 @@ int ImGuiBindings::SliderInt(lua_State *L) {
   int max_val = luaL_checkinteger(L, 4);
 
   bool changed = ImGui::SliderInt(label, &value, min_val, max_val);
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_pushinteger(L, value);
   return 2;
 }
@@ -196,7 +203,7 @@ int ImGuiBindings::InputText(lua_State *L) {
   buffer[sizeof(buffer) - 1] = '\0';
 
   bool changed = ImGui::InputText(label, buffer, sizeof(buffer));
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_pushstring(L, buffer);
   return 2;
 }
@@ -206,7 +213,7 @@ int ImGuiBindings::InputFloat(lua_State *L) {
   float value = luaL_checknumber(L, 2);
 
   bool changed = ImGui::InputFloat(label, &value);
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_pushnumber(L, value);
   return 2;
 }
@@ -216,7 +223,7 @@ int ImGuiBindings::InputInt(lua_State *L) {
   int value = luaL_checkinteger(L, 2);
 
   bool changed = ImGui::InputInt(label, &value);
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_pushinteger(L, value);
   return 2;
 }
@@ -269,7 +276,7 @@ int ImGuiBindings::Unindent(lua_State *L) {
 int ImGuiBindings::TreeNode(lua_State *L) {
   const char *label = luaL_checkstring(L, 1);
   bool result = ImGui::TreeNode(label);
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 
@@ -281,7 +288,7 @@ int ImGuiBindings::TreePop(lua_State *L) {
 int ImGuiBindings::CollapsingHeader(lua_State *L) {
   const char *label = luaL_checkstring(L, 1);
   bool result = ImGui::CollapsingHeader(label);
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 
@@ -305,7 +312,7 @@ int ImGuiBindings::ColorEdit3(lua_State *L) {
   bool changed = ImGui::ColorEdit3(label, col);
 
   // Return results
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_newtable(L);
   for (int i = 0; i < 3; i++) {
     lua_pushinteger(L, i + 1);
@@ -335,7 +342,7 @@ int ImGuiBindings::ColorEdit4(lua_State *L) {
   bool changed = ImGui::ColorEdit4(label, col);
 
   // Return results
-  lua_pushboolean(L, changed);
+  lua_pushboolean(L, static_cast<int>(changed));
   lua_newtable(L);
   for (int i = 0; i < 4; i++) {
     lua_pushinteger(L, i + 1);
@@ -352,7 +359,7 @@ int ImGuiBindings::BeginCombo(lua_State *L) {
   const char *preview_value = luaL_checkstring(L, 2);
 
   bool result = ImGui::BeginCombo(label, preview_value);
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 
@@ -366,18 +373,18 @@ int ImGuiBindings::Selectable(lua_State *L) {
   bool selected = false;
 
   if (lua_gettop(L) > 1) {
-    selected = lua_toboolean(L, 2);
+    selected = (lua_toboolean(L, 2) != 0);
   }
 
   bool result = ImGui::Selectable(label, selected);
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 
 // Menu functions
 int ImGuiBindings::BeginMenuBar(lua_State *L) {
   bool result = ImGui::BeginMenuBar();
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 
@@ -391,11 +398,11 @@ int ImGuiBindings::BeginMenu(lua_State *L) {
   bool enabled = true;
 
   if (lua_gettop(L) > 1) {
-    enabled = lua_toboolean(L, 2);
+    enabled = (lua_toboolean(L, 2) != 0);
   }
 
   bool result = ImGui::BeginMenu(label, enabled);
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 
@@ -414,14 +421,14 @@ int ImGuiBindings::MenuItem(lua_State *L) {
     shortcut = lua_tostring(L, 2);
   }
   if (lua_gettop(L) > 2) {
-    selected = lua_toboolean(L, 3);
+    selected = (lua_toboolean(L, 3) != 0);
   }
   if (lua_gettop(L) > 3) {
-    enabled = lua_toboolean(L, 4);
+    enabled = (lua_toboolean(L, 4) != 0);
   }
 
   bool result = ImGui::MenuItem(label, shortcut, selected, enabled);
-  lua_pushboolean(L, result);
+  lua_pushboolean(L, static_cast<int>(result));
   return 1;
 }
 

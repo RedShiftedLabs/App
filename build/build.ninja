@@ -53,91 +53,111 @@ build CMakeFiles/App.dir/src/main.cpp.o: CXX_COMPILER__App_unscanned_Debug /User
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/main.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/src/Application.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/src/Application.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/Application.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/src/LuaEngine.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/src/LuaEngine.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/LuaEngine.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/src/ImGuiBindings.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/src/ImGuiBindings.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/src/ImGuiBindings.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/deps/imgui/imgui.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/imgui/imgui.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/deps/imgui/imgui_draw.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/imgui/imgui_draw.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui_draw.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/deps/imgui/imgui_tables.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/imgui/imgui_tables.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui_tables.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/deps/imgui/imgui_widgets.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/imgui_widgets.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_glfw.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui/backends
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 build CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__App_unscanned_Debug /Users/redshifted/codes/App/deps/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/App.dir/deps/imgui/backends/imgui_impl_opengl3.cpp.o.d
-  FLAGS = -stdlib=libc++ -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -mmacosx-version-min=12.0
   INCLUDES = -I/Users/redshifted/codes/App/src -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glm -I/Users/redshifted/codes/App/deps/imgui -I/Users/redshifted/codes/App/deps/imgui/backends -I/opt/homebrew/include/lua -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/App.dir
   OBJECT_FILE_DIR = CMakeFiles/App.dir/deps/imgui/backends
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
+  TARGET_PDB = App.pdb
 
 
 # =============================================================================
@@ -156,8 +176,9 @@ build App: CXX_EXECUTABLE_LINKER__App_Debug CMakeFiles/App.dir/src/main.cpp.o CM
   OBJECT_DIR = CMakeFiles/App.dir
   POST_BUILD = cd /Users/redshifted/codes/App/build && /opt/homebrew/bin/cmake -E create_symlink /Users/redshifted/codes/App/gui.lua /Users/redshifted/codes/App/build/gui.lua
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/App.dir/
   TARGET_FILE = App
-  TARGET_PDB = App.dbg
+  TARGET_PDB = App.pdb
 
 
 #############################################
@@ -234,6 +255,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_unscanned_
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -243,6 +266,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_Deb
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/input.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -252,6 +277,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_De
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -261,6 +288,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/platform.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -270,6 +299,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/platform.c.o: C_COMPILER__glfw_unscanned
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -279,6 +310,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_D
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -288,6 +321,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_D
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -297,6 +332,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscan
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -306,6 +343,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_uns
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -315,6 +354,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: C_COMPILER__glfw_unscanne
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -324,6 +365,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -333,6 +376,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: C_COMPILER__glfw_unscan
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -342,6 +387,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: C_COMPILER__glfw_unsc
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -351,6 +398,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_unscann
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/posix_module.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -360,6 +409,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -369,6 +420,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -378,6 +431,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_unscann
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -387,6 +442,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_uns
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -396,6 +453,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_unsc
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -405,6 +464,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 build deps/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_unscanned_Debug /Users/redshifted/codes/App/deps/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
   CONFIG = Debug
@@ -414,6 +475,8 @@ build deps/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/Users/redshifted/codes/App/deps/glfw/include -I/Users/redshifted/codes/App/deps/glfw/src -I/Users/redshifted/codes/App/build/deps/glfw/src
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 
 # =============================================================================
@@ -430,8 +493,9 @@ build deps/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug deps/glfw/sr
   OBJECT_DIR = deps/glfw/src/CMakeFiles/glfw.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
   TARGET_FILE = deps/glfw/src/libglfw3.a
-  TARGET_PDB = glfw3.a.dbg
+  TARGET_PDB = deps/glfw/src/libglfw3.pdb
 
 
 #############################################
@@ -511,14 +575,14 @@ build deps/glfw/src/all: phony deps/glfw/src/libglfw3.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /Users/redshifted/codes/App/build/cmake_install.cmake /Users/redshifted/codes/App/build/deps/glfw/cmake_install.cmake /Users/redshifted/codes/App/build/deps/glfw/src/cmake_install.cmake: RERUN_CMAKE | /Users/redshifted/codes/App/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/CMake/glfw3.pc.in /Users/redshifted/codes/App/deps/glfw/CMake/glfw3Config.cmake.in /Users/redshifted/codes/App/deps/glfw/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/src/CMakeLists.txt /opt/homebrew/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeDependentOption.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakePackageConfigHelpers.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake /opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/FindOpenGL.cmake /opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake /opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake /opt/homebrew/share/cmake/Modules/FindThreads.cmake /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
+build build.ninja /Users/redshifted/codes/App/build/cmake_install.cmake /Users/redshifted/codes/App/build/deps/glfw/cmake_install.cmake /Users/redshifted/codes/App/build/deps/glfw/src/cmake_install.cmake: RERUN_CMAKE | /Users/redshifted/codes/App/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/CMake/glfw3.pc.in /Users/redshifted/codes/App/deps/glfw/CMake/glfw3Config.cmake.in /Users/redshifted/codes/App/deps/glfw/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/src/CMakeLists.txt /opt/homebrew/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDependentOption.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakePackageConfigHelpers.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake /opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/FindOpenGL.cmake /opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake /opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake /opt/homebrew/share/cmake/Modules/FindThreads.cmake /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/redshifted/codes/App/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/CMake/glfw3.pc.in /Users/redshifted/codes/App/deps/glfw/CMake/glfw3Config.cmake.in /Users/redshifted/codes/App/deps/glfw/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/src/CMakeLists.txt /opt/homebrew/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeDependentOption.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakePackageConfigHelpers.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake /opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/FindOpenGL.cmake /opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake /opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake /opt/homebrew/share/cmake/Modules/FindThreads.cmake /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
+build /Users/redshifted/codes/App/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/CMake/glfw3.pc.in /Users/redshifted/codes/App/deps/glfw/CMake/glfw3Config.cmake.in /Users/redshifted/codes/App/deps/glfw/CMakeLists.txt /Users/redshifted/codes/App/deps/glfw/src/CMakeLists.txt /opt/homebrew/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDependentOption.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakePackageConfigHelpers.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake /opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/FindOpenGL.cmake /opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake /opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake /opt/homebrew/share/cmake/Modules/FindThreads.cmake /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-C.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
 
 
 #############################################

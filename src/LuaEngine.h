@@ -31,7 +31,7 @@ private:
 
   // New helper methods
   bool ReloadScript();
-  std::filesystem::file_time_type
+  static std::filesystem::file_time_type
   GetFileModificationTime(const std::string &filename);
 
   lua_State *L;
