@@ -15,7 +15,6 @@ local background_color_props = {
 -- Animation and visual state
 local animation_time = 0
 local pulse_intensity = 0
-local hover_effects = {}
 
 -- Color presets for quick selection
 local color_presets = {
@@ -290,9 +289,6 @@ function draw_gui()
         ImGui.Separator()
         ImGui.Spacing()
         ImGui.PushStyleColor(ImGui.Col_Text, 0.6, 0.6, 0.7, 1.0)
-        local footer_width = ImGui.CalcTextSize("Shape Studio v2.0")
-        ImGui.SetCursorPosX((ImGui.GetWindowWidth() - footer_width) * 0.5)
-        ImGui.Text("Shape Studio v2.0")
         ImGui.PopStyleColor(1)
     end
     ImGui.End()

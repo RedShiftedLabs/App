@@ -33,7 +33,10 @@ const char *Application::s_fragmentShaderSource = R"(
 )";
 
 Application::Application()
-    : m_window(nullptr), m_luaEngine(nullptr), m_isRunning(false) {}
+    : m_window(nullptr), m_luaEngine(nullptr), m_isRunning(false),
+      m_lastTime(0.0), m_frameCount(0), m_fpsTimeAccumulator(0.0),
+      m_fpsFrameCountAccumulator(0) // Initialize FPS members
+{}
 
 Application::~Application() { Shutdown(); }
 
@@ -53,11 +56,37 @@ bool Application::Initialize() {
       return false;
     }
 
+    m_lastTime = glfwGetTime();
+
     m_isRunning = true;
     return true;
   } catch (const std::exception &e) {
     std::cerr << "Initialization failed: " << e.what() << "\n";
     return false;
+  }
+}
+
+void Application::UpdateWindowTitleWithFPS() {
+  double currentTime = glfwGetTime();
+  double deltaTime = currentTime - m_lastTime;
+  m_lastTime = currentTime;
+
+  m_frameCount++; // Overall frame count, if needed for other things
+  m_fpsFrameCountAccumulator++;
+  m_fpsTimeAccumulator += deltaTime;
+
+  if (m_fpsTimeAccumulator >= FPS_UPDATE_INTERVAL) {
+    double fps =
+        static_cast<double>(m_fpsFrameCountAccumulator) / m_fpsTimeAccumulator;
+
+    std::string newTitle =
+        m_baseWindowTitle + " | FPS: " +
+        std::to_string(static_cast<int>(fps + 0.5)); // +0.5 for rounding
+    glfwSetWindowTitle(m_window, newTitle.c_str());
+
+    // Reset accumulators for the next interval
+    m_fpsTimeAccumulator = 0.0;
+    m_fpsFrameCountAccumulator = 0;
   }
 }
 
@@ -84,7 +113,7 @@ void Application::InitializeGLFW() {
   }
 
   glfwMakeContextCurrent(m_window);
-  glfwSwapInterval(1); // VSync
+  glfwSwapInterval(0); // VSync
 
   // Set up keyboard callback for live reload
   glfwSetWindowUserPointer(m_window, this);
@@ -142,10 +171,13 @@ void Application::InitializeRenderables() {
 }
 
 void Application::Run() {
+  m_lastTime = glfwGetTime();
+
   while (m_isRunning && (glfwWindowShouldClose(m_window) == 0)) {
+    UpdateWindowTitleWithFPS();
     glfwPollEvents();
-    Update();
-    Render();
+    Update(); // Calls ImGui NewFrame, HandleMouseInput, Lua DrawGUI
+    Render(); // Clears, Renders Scene, Renders ImGui, Swaps Buffers
   }
 }
 

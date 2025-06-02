@@ -40,12 +40,22 @@ private:
   void RenderScene();
   void CleanupRenderables();
 
+  // --- FPS Calculation Members ---
+  void UpdateWindowTitleWithFPS();
+  double m_lastTime = 0.0;
+  int m_frameCount = 0;
+  double m_fpsTimeAccumulator = 0.0;
+  int m_fpsFrameCountAccumulator = 0;
+  static constexpr double FPS_UPDATE_INTERVAL =
+      0.5; // Update FPS in title every 0.5 seconds
+
   static void ErrorCallback(int error, const char *description);
   static void KeyCallback(GLFWwindow *window, int key, int scancode, int action,
                           int mods);
 
   void HandleMouseInput();
   GLFWwindow *m_window;
+  std::string m_baseWindowTitle = "Minimal ImGui + Lua App";
   std::unique_ptr<LuaEngine> m_luaEngine;
   bool m_isRunning;
 
